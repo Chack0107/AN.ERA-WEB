@@ -53,7 +53,7 @@ export function Header() {
           >
             {/* Logo para when scrolled (dark/black) */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2F8e96fe577a524365b840f00f3040cf07?format=webp&width=800&height=1200"
+              src="/logo-dark.webp"
               alt="An Era Jewelry"
               className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 ${
                 isScrolled ? 'opacity-100' : 'opacity-0'
@@ -61,7 +61,7 @@ export function Header() {
             />
             {/* Logo para when at top (white) */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2Ffbeb834184de4939b12c46f9b0abdfc7?format=webp&width=800&height=1200"
+              src="/logo-light.webp"
               alt="An Era Jewelry"
               className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 absolute ${
                 isScrolled ? 'opacity-0' : 'opacity-100'
