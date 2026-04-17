@@ -1,4 +1,4 @@
-¿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ShoppingBag, Menu } from 'lucide-react';
 import { useCart } from '@/hooks/useCart';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -49,23 +49,17 @@ export function Header() {
               e.preventDefault();
               scrollToSection('hero');
             }}
-            className="flex items-center relative h-12 md:h-16"
+            className="flex items-center"
           >
-            {/* Logo when at top (white text) */}
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2Ffbeb834184de4939b12c46f9b0abdfc7?format=webp&width=800&height=1200"
+              key={isScrolled ? 'dark' : 'light'}
+              src={
+                isScrolled
+                  ? 'https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2Faa1df73d572b4e6c8df155dbab5c5550?format=webp&width=800&height=1200'
+                  : 'https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2Ffbeb834184de4939b12c46f9b0abdfc7?format=webp&width=800&height=1200'
+              }
               alt="An Era Jewelry"
-              className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 absolute ${
-                isScrolled ? 'opacity-0' : 'opacity-100'
-              }`}
-            />
-            {/* Logo when scrolled (dark text) */}
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2Faa1df73d572b4e6c8df155dbab5c5550?format=webp&width=800&height=1200"
-              alt="An Era Jewelry"
-              className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 absolute ${
-                isScrolled ? 'opacity-100' : 'opacity-0'
-              }`}
+              className="h-12 md:h-16 w-auto object-contain transition-opacity duration-500"
             />
           </a>
 
