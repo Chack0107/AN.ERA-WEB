@@ -49,22 +49,13 @@ export function Header() {
               e.preventDefault();
               scrollToSection('hero');
             }}
-            className="flex flex-col items-start"
+            className="flex items-center"
           >
-            <span
-              className={`font-serif text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${
-                isScrolled ? 'text-black' : 'text-white'
-              }`}
-            >
-              An Era
-            </span>
-            <span
-              className={`text-[10px] tracking-[0.3em] uppercase transition-colors duration-300 ${
-                isScrolled ? 'text-neutral-500' : 'text-white/80'
-              }`}
-            >
-              Timeless Pieces
-            </span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F71592f13a45b44818442d75ffc07da5d%2F8e96fe577a524365b840f00f3040cf07?format=webp&width=800&height=1200"
+              alt="An Era Jewelry"
+              className="h-12 md:h-16 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}
