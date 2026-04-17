@@ -53,7 +53,7 @@ export function Header() {
           >
             {/* Logo para when scrolled (dark/black) */}
             <img
-              src="/logo-dark.webp"
+              src="/logo-dark.png"
               alt="An Era Jewelry"
               className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 ${
                 isScrolled ? 'opacity-100' : 'opacity-0'
@@ -61,7 +61,7 @@ export function Header() {
             />
             {/* Logo para when at top (white) */}
             <img
-              src="/logo-light.webp"
+              src="/logo-light.png"
               alt="An Era Jewelry"
               className={`h-12 md:h-16 w-auto object-contain transition-opacity duration-500 absolute ${
                 isScrolled ? 'opacity-0' : 'opacity-100'
