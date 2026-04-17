@@ -1,0 +1,171 @@
+import type { Product, Testimonial, Category } from '@/types';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Anillo Solitario Aurora',
+    price: 85000,
+    category: 'anillos',
+    image: '/product-anillo-1.jpg',
+    description: 'Elegante anillo solitario con acabado en oro de 18k y piedra central brillante.',
+    isBestseller: true,
+  },
+  {
+    id: '2',
+    name: 'Anillo Sello Clásico',
+    price: 52000,
+    category: 'anillos',
+    image: '/product-anillo-2.jpg',
+    description: 'Anillo sello minimalista con acabado en oro mate de 18k.',
+    isLimited: true,
+  },
+  {
+    id: '3',
+    name: 'Anillo Promesa Eterna',
+    price: 48000,
+    category: 'anillos',
+    image: '/product-anillo-3.jpg',
+    description: 'Delicado anillo con pequeño diamante, perfecto para una promesa de amor.',
+  },
+  {
+    id: '4',
+    name: 'Collar Círculo de Luz',
+    price: 62000,
+    category: 'collares',
+    image: '/product-collar-1.jpg',
+    description: 'Collar delicado con dije circular y pequeña piedra brillante.',
+    isBestseller: true,
+  },
+  {
+    id: '5',
+    name: 'Collar Corazón Dorado',
+    price: 45000,
+    category: 'collares',
+    image: '/product-collar-2.jpg',
+    description: 'Collar con dije de corazón en oro de 18k, símbolo de amor eterno.',
+  },
+  {
+    id: '6',
+    name: 'Set de Collares Layered',
+    price: 78000,
+    category: 'collares',
+    image: '/product-collar-3.jpg',
+    description: 'Set de tres collares de diferentes longitudes para un look moderno.',
+    isLimited: true,
+  },
+  {
+    id: '7',
+    name: 'Pulsera Charms Celestial',
+    price: 38000,
+    category: 'pulseras',
+    image: '/product-pulsera-1.jpg',
+    description: 'Pulsera con charms de luna, estrella y corazón en oro de 18k.',
+    isBestseller: true,
+  },
+  {
+    id: '8',
+    name: 'Brazalete Diamantes',
+    price: 125000,
+    category: 'pulseras',
+    image: '/product-pulsera-2.jpg',
+    description: 'Elegante brazalete con patrón de diamantes en oro de 18k.',
+    isLimited: true,
+  },
+  {
+    id: '9',
+    name: 'Pulsera Tennis Clásica',
+    price: 95000,
+    category: 'pulseras',
+    image: '/product-pulsera-3.jpg',
+    description: 'Pulsera tennis con piedras brillantes engastadas en oro.',
+  },
+  {
+    id: '10',
+    name: 'Aretes Huggie Gold',
+    price: 35000,
+    category: 'aretes',
+    image: '/product-aretes-1.jpg',
+    description: 'Aretes huggie clásicos en oro de 18k con cierre seguro.',
+    isBestseller: true,
+  },
+  {
+    id: '11',
+    name: 'Aretes Perla Drop',
+    price: 42000,
+    category: 'aretes',
+    image: '/product-aretes-2.jpg',
+    description: 'Elegantes aretes colgantes con perlas cultivadas y oro.',
+  },
+  {
+    id: '12',
+    name: 'Aretes Flor de Diamantes',
+    price: 68000,
+    category: 'aretes',
+    image: '/product-aretes-3.jpg',
+    description: 'Deslumbrantes aretes con forma de flor y piedras brillantes.',
+    isLimited: true,
+  },
+];
+
+export const categories: Category[] = [
+  {
+    id: '1',
+    name: 'Anillos',
+    image: '/product-anillo-1.jpg',
+    slug: 'anillos',
+  },
+  {
+    id: '2',
+    name: 'Collares',
+    image: '/product-collar-1.jpg',
+    slug: 'collares',
+  },
+  {
+    id: '3',
+    name: 'Pulseras',
+    image: '/product-pulsera-1.jpg',
+    slug: 'pulseras',
+  },
+  {
+    id: '4',
+    name: 'Aretes',
+    image: '/product-aretes-1.jpg',
+    slug: 'aretes',
+  },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'María Fernanda',
+    text: 'La calidad de las joyas es excepcional. Mi anillo llegó en una caja hermosa y el brillo es increíble. Definitivamente volveré a comprar.',
+    rating: 5,
+  },
+  {
+    id: '2',
+    name: 'Carolina R.',
+    text: 'Compré un collar para mi madre y quedó encantada. El servicio al cliente fue excelente y el envío muy rápido.',
+    rating: 5,
+  },
+  {
+    id: '3',
+    name: 'Daniela M.',
+    text: 'Las pulseras son divinas, muy delicadas y elegantes. Perfectas para regalar o para uno mismo.',
+    rating: 5,
+  },
+  {
+    id: '4',
+    name: 'Lucía G.',
+    text: 'Me encanta que las piezas sean atemporales. Tengo mi collar hace un año y sigue luciendo como nuevo.',
+    rating: 5,
+  },
+];
+
+export const instagramImages = [
+  '/instagram-1.jpg',
+  '/instagram-2.jpg',
+  '/instagram-3.jpg',
+  '/instagram-4.jpg',
+  '/instagram-5.jpg',
+  '/instagram-6.jpg',
+];
